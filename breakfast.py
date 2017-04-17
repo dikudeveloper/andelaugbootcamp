@@ -3,6 +3,7 @@ def make_breakfast(food):
     print('Mix')
     print('Pour into the heated pan')
     print('Flip it to the other side')
+    print('Flip it back')
     breakfast = '---YUMMY TASTY {}---'.format(food)
     print(breakfast)
 
