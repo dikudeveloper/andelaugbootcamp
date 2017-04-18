@@ -5,28 +5,6 @@ from prime_number import generate_prime_numbers
 class TestGeneratePrimeNumbers(unittest.TestCase):
     """Tests for prime_number.py"""
 
-    # def setUp(self):
-    #     t1 = self.pnum = generate_prime_numbers(5)
-    #
-    # def test_prime_number_returns_error_message_arg_non_integer(self):
-    #     self.assertRaises(ValueError, self.pnum, 1.5)
-    #
-    # def test_prime_number_returns_error_message_if_arg_negative(self):
-    #     """should fail for negative prime numbers"""
-    #     self.assertRaises(ValueError, self.pnum, -1)
-    #
-    # def test_prime_number_returns_error_message_if_arg_zero(self):
-    #     """should fail for 0 input"""
-    #     self.assertRaises(ValueError, self.pnum, 0)
-    #
-    # def test_prime_number_returns_error_message_if_arg_one(self):
-    #     """should fail for 1 input"""
-    #     self.assertRaises(ValueError, self.pnum, 1)
-    #
-    # def test_prime_number_returns_error_message_if_arg_string(self):
-    #     """should fail for string input"""
-    #     self.assertRaises(ValueError, self.pnum, 'abc')
-
     def test_output_is_list(self):
         """output should be a List"""
         self.assertEqual(True, isinstance(generate_prime_numbers(10), list), msg='Should return a list')

@@ -15,12 +15,16 @@ def generate_prime_numbers(n):
 
 
 def main():
+    # Testing Function generate_prime_numbers(n)
     print(generate_prime_numbers(12))
-    # for primenumsize in range(1000, 100001, 10000):
-    #     start = time.time()
-    #     generate_prime_numbers(primenumsize)
-    #     end = time.time()
-    #     print('size: %d time: %f' % (primenumsize, end-start))
+
+    # Asymptotic Tests -- Please find output in file on my Github repo
+    # https://github.com/dikudeveloper/andelaugbootcamp
+    for primenumsize in range(1000, 100001, 10000):
+        start = time.time()
+        generate_prime_numbers(primenumsize)
+        end = time.time()
+        print('size: %d time: %f' % (primenumsize, end-start))
 
 if __name__ == '__main__':
     main()
