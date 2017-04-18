@@ -12,16 +12,15 @@ def generate_prime_numbers(n):
                 for j in range(i * i, n + 1, i):
                     not_prime.append(j)
         return prime
-    else:
-        raise ValueError
 
 
 def main():
-    for primenumsize in range(1000, 100001, 10000):
-        start = time.time()
-        generate_prime_numbers(primenumsize)
-        end = time.time()
-        print('size: %d time: %f' % (primenumsize, end-start))
+    print(generate_prime_numbers(12))
+    # for primenumsize in range(1000, 100001, 10000):
+    #     start = time.time()
+    #     generate_prime_numbers(primenumsize)
+    #     end = time.time()
+    #     print('size: %d time: %f' % (primenumsize, end-start))
 
 if __name__ == '__main__':
     main()
