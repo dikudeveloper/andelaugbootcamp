@@ -1,0 +1,13 @@
+D:\python\PycharmProjects\andelaugbootcamp\myvenv\Scripts\python.exe D:/python/PycharmProjects/andelaugbootcamp/prime_number.py
+size: 1000 time: 0.010000
+size: 11000 time: 1.343077
+size: 21000 time: 5.068290
+size: 31000 time: 13.003744
+size: 41000 time: 20.002144
+size: 51000 time: 28.529632
+size: 61000 time: 40.727329
+size: 71000 time: 55.702186
+size: 81000 time: 72.074122
+size: 91000 time: 93.047322
+
+Process finished with exit code 0
