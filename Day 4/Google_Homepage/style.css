@@ -2,7 +2,7 @@ button{
     background-color: #4285F4;
     border: none;
     color: white;
-    padding: 10px 20px;
+    padding: 5px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -38,6 +38,14 @@ body, html {
     margin-top: 100px;
 }
 
+/*.logo img {*/
+    /*display:block;*/
+    /*width: 269px;*/
+    /*height:95px;*/
+    /*margin:auto;*/
+    /*margin-top: 30px;*/
+    /*padding-top: 112px;*/
+/*}*/
 #header {
     width:100%;
     height:100px;
@@ -64,11 +72,18 @@ body, html {
 .navli a:hover {
     text-decoration:underline;
 }
+#icon {
+    /*margin-top:10px;*/
+    /*padding-left:5px;*/
+    /*bottom:0;
+    position:relative;*/
+}
 .searchbar {
     width:400px;
     height:28px;
     margin: auto;
     display:block;
+    /*background-color:red;*/
     padding-top:10px;
 }
 #search1 {
@@ -78,6 +93,7 @@ body, html {
 }
 #buttons {
     display:block;
+    /*background-color:blue;*/
     height: 22px;
     width:250px;
     margin: auto;
