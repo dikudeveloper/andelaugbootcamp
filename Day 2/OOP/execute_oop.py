@@ -14,7 +14,7 @@ def main():
     print('Employees when individually processed:')
     print("{}\nearning {:.3f}\n\n".format(salary_employee, salary_employee.employee_earnings()))
     print("{}\nearning {:.3f}\n\n".format(commission_employee, commission_employee.employee_earnings()))
-    print("{:f}\nearning {:.3f}\n\n".format(salary_plus_commission_employee, salary_plus_commission_employee.employee_earnings()))
+    # print("{:f}\nearning {:.3f}\n\n".format(salary_plus_commission_employee, salary_plus_commission_employee.employee_earnings()))
 
     # Now process Employees polymorphically
     employees = [salary_employee, commission_employee, salary_plus_commission_employee]
@@ -25,8 +25,8 @@ def main():
         if isinstance(current_employee, SalaryPlusCommission):
             salarypluscommissionemployee = current_employee
             salarypluscommissionemployee.set_monthly_salary(1.20 * salarypluscommissionemployee.get_monthly_salary())
-            print('Earnings with a 20% increment: ' % salarypluscommissionemployee.get_monthly_salary())
-    print('Earnings: {:.3f}'.format(current_employee.employee_earnings()))
+            print('Earnings with a 20 percent increment: %f' % salarypluscommissionemployee.get_monthly_salary())
+    print('Earnings: {}'.format(current_employee.employee_earnings()))
 
     # Get Type name for each object in the employees list
     count = 0
