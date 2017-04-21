@@ -17,6 +17,8 @@ class Employee(object):
         __employee_id: Employee's ID number
     """
 
+    # designs Employee to be an Abstract Base Class
+    # Implication: You cannot create an Instance of this Class. It is only meant to be Inherited from
     __metaclass__ = ABCMeta
 
     def __init__(self, first, last, employeeid):
@@ -58,7 +60,7 @@ class Employee(object):
     # An abstract Method to be overidden by subclasses
     @abstractmethod
     def employee_earnings(self):
-        """"Return a string representing the type of Employee this is."""
+        """"Return the earnings of an Employee."""
         pass
 
     # return the String representation of Employee object

@@ -9,7 +9,8 @@ class SalaryPlusCommission(CommissionEmployee):
     def set_monthly_salary(self, salary):
         if salary < 0:
             self.__monthly_salary = 0
-        self.__monthly_salary = salary
+        else:
+            self.__monthly_salary = salary
 
     def get_monthly_salary(self):
         return self.__monthly_salary
