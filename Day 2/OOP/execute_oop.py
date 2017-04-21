@@ -11,14 +11,19 @@ def main():
     salary_employee = SalaryEmployee('Joseph', 'Diku', 1, 1000)
     commission_employee = CommissionEmployee('Lawrence', 'Mr. Moustache', 100, 20, 0.01)
     salary_plus_commission_employee = SalaryPlusCommission('Henry', 'Mukasa', 5, 50, 0.2, 500)
+    print('==========================================')
     print('Employees when individually processed:')
-    print("{}\nearning {:.3f}\n\n".format(salary_employee, salary_employee.employee_earnings()))
-    print("{}\nearning {:.3f}\n\n".format(commission_employee, commission_employee.employee_earnings()))
-    # print("{:f}\nearning {:.3f}\n\n".format(salary_plus_commission_employee, salary_plus_commission_employee.employee_earnings()))
+    print('==========================================')
+    print("{}\nearning {}\n\n".format(salary_employee, salary_employee.employee_earnings()))
+    print("\n{}\nearning {:.3f}\n\n".format(commission_employee, commission_employee.employee_earnings()))
+    test = salary_plus_commission_employee.employee_earnings()
+    print("\n{}\nearning {:.2f}\n\n".format(salary_plus_commission_employee, salary_plus_commission_employee.employee_earnings()))
 
     # Now process Employees polymorphically
     employees = [salary_employee, commission_employee, salary_plus_commission_employee]
+    print('============================================')
     print('Employees when Polymorphically processed:')
+    print('============================================')
 
     for current_employee in employees:
         print(current_employee)
@@ -31,6 +36,7 @@ def main():
     # Get Type name for each object in the employees list
     count = 0
     is_True = False
+    print()
     while count < len(employees):
         print("Employee %d is a %s\n" % (count, employees[count]))
         count += 1

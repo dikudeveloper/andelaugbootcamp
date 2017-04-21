@@ -32,7 +32,7 @@ class SalaryEmployee(Employee):
 
     # return a String representation of a SalaryEmployee object
     def __repr__(self):
-        return "(Salary Employee: {}\nMonthly Salary: {})".format(super().__repr__(), self.get_monthly_salary())
+        return "Salary Employee: {}\nMonthly Salary: {}".format(super().__repr__(), self.get_monthly_salary())
 
 
 

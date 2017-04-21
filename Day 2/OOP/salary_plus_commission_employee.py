@@ -15,7 +15,7 @@ class SalaryPlusCommission(CommissionEmployee):
         return self.__monthly_salary
 
     def employee_earnings(self):
-        self.get_monthly_salary() + super().employee_earnings()
+        return self.get_monthly_salary() + super().employee_earnings()
 
     def __repr__(self):
         return "Salary plus commission employee %s; Salary plus commission: %.3f" % \

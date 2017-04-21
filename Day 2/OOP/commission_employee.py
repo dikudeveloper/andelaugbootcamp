@@ -18,7 +18,8 @@ class CommissionEmployee(Employee):
     def set_commission_rate(self, rate):
         if rate>0.0 and rate <=1.0:
             self.__commission_rate = rate
-        self.__commission_rate = 0.0
+        else:
+            self.__commission_rate = 0.0
 
     # get commission rate
     def get_commission_rate(self):
@@ -40,5 +41,5 @@ class CommissionEmployee(Employee):
 
     # return a String representation of a SalaryEmployee object
     def __repr__(self):
-        return "(Commission Employee: {}\nTotal Sales: {}; Commission Rate: {})"\
+        return "Commission Employee: {}\nTotal Sales: {}; Commission Rate: {}"\
             .format(super().__repr__(), self.get_total_sales(), self.get_commission_rate())
